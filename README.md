@@ -1,1 +1,1 @@
-This is recipes book for my favourite dessert -By Chartso
+This is a project that shows skills in writing clean HTML. website for example, we will be providing some dessert recipes. Enjoy! -By Chartso
