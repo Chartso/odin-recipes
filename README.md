@@ -1,0 +1,2 @@
+ Introduction
+Welcome to Dessert Base - your ultimate destination for discovering and sharing amazing dessert recipes! Whether you're a beginner baker looking for simple treats or an experienced pastry chef seeking inspiration, our collection of carefully curated dessert recipes will satisfy your sweet tooth. From classic chocolate chip cookies to elaborate multi-layer cakes, we've got something for every occasion and skill level.
