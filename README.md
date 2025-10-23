@@ -1,1 +1,1 @@
-# odin-recipes
+This website showcases a collection of recipes with a main index page that links to individual recipe pages. Each recipe page contains detailed information including ingredients, cooking instructions, and an appetizing image of the dish.
