@@ -1,0 +1,170 @@
+:root{
+  --paper: #f6f1e6;
+  --card: #fffdf8;
+  --ink: #2e2a24;
+  --basil: #4c6b4f;
+  --basil-dark: #37502f;
+  --rust: #b5502e;
+  --line: #d8cdb4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.5;
+}
+
+
+header {
+  border-bottom: 3px solid var(--basil-dark);
+  padding: 28px 20px 18px;
+  text-align: center;
+  background-color: var(--paper);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: var(--basil-dark);
+}
+
+header .tagline {
+  margin: 6px 0 0;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink);
+  opacity: 0.75;
+}
+
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+}
+
+
+.recipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.recipe-card {
+  background-color: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  width: 300px;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--ink);
+  box-shadow: 2px 3px 0 var(--line);
+}
+
+.recipe-card:hover {
+  border-color: var(--basil);
+  box-shadow: 2px 3px 0 var(--basil);
+}
+
+.recipe-card .card-label {
+  display: block;
+  font-family: Verdana, sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--rust);
+  margin-bottom: 6px;
+}
+
+.recipe-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+  color: var(--basil-dark);
+}
+
+.recipe-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+
+.recipe-meta {
+  display: flex;
+  gap: 24px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+  margin: 20px 0 30px;
+  font-family: Verdana, sans-serif;
+  font-size: 0.85rem;
+}
+
+.recipe-meta div span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.7rem;
+  color: var(--rust);
+  margin-bottom: 2px;
+}
+
+section.block {
+  margin-bottom: 30px;
+}
+
+section.block h3 {
+  color: var(--basil-dark);
+  border-bottom: 2px solid var(--basil);
+  display: inline-block;
+  padding-bottom: 3px;
+  margin-bottom: 12px;
+}
+
+ul.ingredients {
+  padding-left: 20px;
+}
+
+ul.ingredients li {
+  margin-bottom: 6px;
+}
+
+ol.steps li {
+  margin-bottom: 12px;
+  padding-left: 6px;
+}
+
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: Verdana, sans-serif;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--basil-dark);
+  border: 1px solid var(--basil-dark);
+  border-radius: 4px;
+  padding: 6px 14px;
+}
+
+.back-link:hover {
+  background-color: var(--basil-dark);
+  color: var(--card);
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-family: Verdana, sans-serif;
+  font-size: 0.75rem;
+  color: var(--ink);
+  opacity: 0.6;
+}
