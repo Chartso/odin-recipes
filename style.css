@@ -1,4 +1,4 @@
-:root{
+:root {
   --paper: #f6f1e6;
   --card: #fffdf8;
   --ink: #2e2a24;
@@ -6,6 +6,20 @@
   --basil-dark: #37502f;
   --rust: #b5502e;
   --line: #d8cdb4;
+}
+
+[data-theme="dark"] {
+  --paper: #211e19;
+  --card: #2a261f;
+  --ink: #ece4d3;
+  --basil: #7fa878;
+  --basil-dark: #9dc296;
+  --rust: #d97b52;
+  --line: #47412f;
+}
+
+body {
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 * {
@@ -22,10 +36,30 @@ body {
 
 
 header {
+  position: relative;
   border-bottom: 3px solid var(--basil-dark);
   padding: 28px 20px 18px;
   text-align: center;
   background-color: var(--paper);
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  font-family: Verdana, sans-serif;
+  font-size: 0.75rem;
+  background-color: var(--card);
+  color: var(--basil-dark);
+  border: 1px solid var(--basil-dark);
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: var(--basil-dark);
+  color: var(--card);
 }
 
 header h1 {
@@ -50,6 +84,39 @@ main {
   padding: 30px 20px 60px;
 }
 
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 14px;
+  font-family: Verdana, sans-serif;
+  font-size: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background-color: var(--card);
+  color: var(--ink);
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--basil);
+}
+
+#no-results {
+  display: none;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  font-size: 0.9rem;
+  color: var(--ink);
+  opacity: 0.7;
+  margin-top: 10px;
+}
 
 .recipe-grid {
   display: flex;
@@ -139,6 +206,70 @@ ul.ingredients li {
 ol.steps li {
   margin-bottom: 12px;
   padding-left: 6px;
+}
+
+
+.servings-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.servings-control button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--basil-dark);
+  border-radius: 4px;
+  background-color: var(--card);
+  color: var(--basil-dark);
+  font-family: Verdana, sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.servings-control button:hover {
+  background-color: var(--basil-dark);
+  color: var(--card);
+}
+
+.servings-control input {
+  width: 40px;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  font-size: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 4px;
+  background-color: var(--card);
+  color: var(--ink);
+}
+
+
+.print-btn {
+  font-family: Verdana, sans-serif;
+  font-size: 0.85rem;
+  background-color: var(--card);
+  color: var(--basil-dark);
+  border: 1px solid var(--basil-dark);
+  border-radius: 4px;
+  padding: 6px 14px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.print-btn:hover {
+  background-color: var(--basil-dark);
+  color: var(--card);
+}
+
+@media print {
+  header .theme-toggle,
+  .back-link,
+  .print-btn,
+  footer {
+    display: none;
+  }
 }
 
 
