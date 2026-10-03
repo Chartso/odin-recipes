@@ -18,16 +18,17 @@ HTML5
 CSS53
 
 <h6>Project Structure</h6>
+<br>
 odin-recipes/
 │
 ├── index.html
 ├── style.css
-│
+│<br>
 ├── recipes/
 │   ├── recipe1.html
 │   ├── recipe2.html
 │   └── recipe3.html
-│
+│<br>
 └── images/
     ├── recipe1.jpg
     ├── recipe2.jpg
